@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:scrollbarAlwaysDrawHorizontalTrack="true"
+    android:textColor="#784f33"
+    android:weightSum="10"
+    tools:context="com.example.kyu.garbanzo.MainActivity"
+    tools:ignore="ContentDescription">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/layers"
+        android:contentDescription="@string/blanc" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            style="@style/bar"
+            android:layout_weight="2"
+            android:contentDescription="@string/pic_description"
+            android:src="@drawable/mainph" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/nameOfBrand"
+            android:layout_weight="1" />
+
+        <ScrollView
+            style="@style/scroll"
+            android:layout_weight="3">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow style="@style/tableRow">
+
+                    <ImageView
+                        style="@style/icon"
+                        android:contentDescription="@string/pic_description"
+                        android:src="@drawable/iconloc" />
+
+                    <TextView
+                        style="@style/text"
+                        android:text="@string/street" />
+                </TableRow>
+
+                <TableRow style="@style/tableRow">
+
+                    <ImageView
+                        style="@style/icon"
+                        android:contentDescription="@string/pic_description"
+                        android:src="@drawable/icontime" />
+
+                    <TextView
+                        style="@style/text"
+                        android:text="@string/open_time" />
+                </TableRow>
+
+                <TableRow style="@style/tableRow">
+
+                    <ImageView
+                        style="@style/icon"
+                        android:contentDescription="@string/pic_description"
+                        android:src="@drawable/iconweb" />
+
+                    <TextView
+                        style="@style/text"
+                        android:text="@string/webpage" />
+                </TableRow>
+
+                <TextView
+                    style="@style/text"
+                    android:gravity="center_horizontal"
+                    android:padding="6dp"
+                    android:text="@string/description" />
+            </TableLayout>
+        </ScrollView>
+
+        <ImageView
+            style="@style/bar"
+            android:layout_weight="1.5"
+            android:contentDescription="@string/pic_description"
+            android:src="@drawable/spod" />
+
+    </LinearLayout>
+</RelativeLayout>

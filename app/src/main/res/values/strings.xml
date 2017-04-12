@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Garbanzo</string>
+    <string name="pic_description">Main picture</string>
+    <string name="name_of_brand">kocia kawiarnia</string>
+    <string name="street">Ul. Rakowiecka 29, 93-234, Łódź</string>
+    <string name="open_time">12:00 - 20:00</string>
+    <string name="webpage">http://www.kotkot.pl</string>
+    <string name="description">Kocia Kawiarnia is a cat rescue centre and cat café offering a selection of drinks and hot and cold dishes, with vegetarian, vegan, and gluten-free options.</string>
+    <string name="blanc"> </string>
+</resources>
